@@ -11,6 +11,12 @@
 
 To run this package, it is needed to previously install Rcpp, gamlss.dist and numDeriv packages. 
 
+## Installation
+
+```r
+# install.packages("devtools")
+devtools::install_github("USERNAME/REPOSITORY")
+
 ## Citation
 
 To cite RobustDiscrete in publications use:
