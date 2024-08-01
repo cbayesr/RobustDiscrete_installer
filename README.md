@@ -9,4 +9,10 @@
 
 ## Requirements
 
-To run this package it is neededd ***
+To run this package, it is needed to previously install Rcpp, gamlss.dist and numDeriv packages. 
+
+## Citation
+
+To cite RobustDiscrete in publications use:
+
+Bayes, C. L., Bazán, J. L., & Valdivieso, L. (2024). A robust regression model for bounded count health data. *Statistical Methods in Medical Research*. Advance online publication. [https://doi.org/10.1177/09622802241259178](https://doi.org/10.1177/09622802241259178)
