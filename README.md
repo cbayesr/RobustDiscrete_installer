@@ -9,7 +9,7 @@
 
 ## Requirements
 
-To run this package, it is needed to previously install Rcpp, gamlss, gamlss.dist and numDeriv packages. 
+To run this package previously, install the Rcpp, gamlss, gamlss.dist, and numDeriv packages. 
 
 ## Installation
 
@@ -33,7 +33,7 @@ Bayes, C. L., Bazán, J. L., & Valdivieso, L. (2024). A robust regression model 
 
 ## Example
 
-From Appendix C of Bayes, Bazán, and Valdivieso (2024). Estimation of model M5 had a run time of 212 seconds on an Intel Core i-7 processor with 2.80 GHz and 16.0 GB RAM due to the use of numerical integration to evaluate the probability mass function of the B2B distribution.
+Taken from Appendix C of Bayes, Bazán, and Valdivieso (2024). Estimation of model M5 took 212 seconds on an Intel Core i-7 processor with 2.80 GHz and 16.0 GB RAM, this is mainly due to the use of numerical integration in the B2B probability mass evaluation.
 
 ```r
 library(gamlss)
