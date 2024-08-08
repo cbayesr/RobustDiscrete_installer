@@ -13,10 +13,14 @@ To run this package, it is needed to previously install Rcpp, gamlss.dist and nu
 
 ## Installation
 
+Windows:
 ```r
-install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/c8d5ada5c19a52d0efbbd92b1d7a076c82c0ad11/RobustDiscrete_0.1.0.zip")
+install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.1.0.zip")
 ```
-
+Mac OS:
+```r
+install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.1.0.tar.gz",repos=NULL,type="source")
+```
 ## Citation
 
 To cite RobustDiscrete in publications use:
