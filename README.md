@@ -9,7 +9,7 @@
 
 ## Requirements
 
-To run this package, it is needed to previously install Rcpp, gamlss.dist and numDeriv packages. 
+To run this package, it is needed to previously install Rcpp, gamlss, gamlss.dist and numDeriv packages. 
 
 ## Installation
 
@@ -17,10 +17,14 @@ Windows:
 ```r
 install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.1.0.zip")
 ```
-Mac OS:
+This R code was tested on Windows 10, R version 4.4.1, and RStudio version 2024.04.2.
+
+macOS:
 ```r
 install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.1.0.tar.gz",repos=NULL,type="source")
 ```
+This R code was tested on macOS 14.6, R version 4.4.1, and RStudio version 2024.04.2.
+
 ## Citation
 
 To cite RobustDiscrete in publications use:
