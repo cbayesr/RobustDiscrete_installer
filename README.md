@@ -10,7 +10,7 @@
 
 ## Description 
 
-The RobustDiscrete package provides robust regression tools for modeling discrete response variables, supporting both bounded and unbounded counts, through the GAMLSS modeling framework for flexible parameter specification. The package implements the Beta-2-Binomial (B2B) model for bounded, and the Gamma-Negative-Binomial (GNB_k) model for unbounded count data. These new robust models extends the usual Beta-Binomial and Negative-Binomial models respectively, and are designed to handle extreme observations.
+The RobustDiscrete package provides robust regression tools for modeling discrete response variables, supporting both bounded and unbounded counts, through the GAMLSS modeling framework for flexible parameter specification. The package implements the Beta-2-Binomial (B2B) model for bounded, and the Gamma-Negative-Binomial (GNB) model for unbounded count data. These new robust models extends the usual Beta-Binomial and Negative-Binomial models respectively, and are designed to handle extreme observations.
 
 ## Requirements
 
@@ -20,13 +20,13 @@ To run this package previously, install the Rcpp, gamlss, gamlss.dist, and numDe
 
 Windows:
 ```r
-install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.1.0.zip")
+install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.2.0.zip")
 ```
 This R code was tested on Windows 10, R version 4.5.2, and RStudio version 2025.09.2.
 
 macOS:
 ```r
-install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.1.0.tar.gz",repos=NULL,type="source")
+install.packages("https://github.com/cbayesr/RobustDiscrete_installer/raw/main/RobustDiscrete_0.2.0.tar.gz",repos=NULL,type="source")
 ```
 This R code was tested on macOS 14.5, R version 4.5.2, and RStudio version 2025.09.2.
 
