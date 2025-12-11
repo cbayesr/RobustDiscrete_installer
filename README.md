@@ -10,11 +10,11 @@
 
 ## Description 
 
-The RobustDiscrete package provides robust regression tools for modeling discrete response variables, supporting both bounded and unbounded counts, through the GAMLSS modeling framework for flexible parameter specification. The package implements the Beta-2-Binomial (B2B) model for bounded, and the Gamma-Negative-Binomial (GNB) model for unbounded count data. These new robust models extends the usual Beta-Binomial and Negative-Binomial models respectively, and are designed to handle extreme observations.
+The RobustDiscrete package provides robust regression tools for modeling discrete response variables, supporting both bounded and unbounded counts, through the GAMLSS modeling framework for flexible parameter specification. The package implements the Beta-2-Binomial ($B2B$) model for bounded, and the Gamma-Negative-Binomial ($GNB_k$) model for unbounded count data. These new robust models extends the usual Beta-Binomial and Negative-Binomial models respectively, and are designed to handle extreme observations.
 
 ## Requirements
 
-To run this package previously, install the Rcpp, gamlss, gamlss.dist, and numDeriv packages. 
+To run this package previously, install the Rcpp, gamlss, gamlss.dist, and numDeriv packages, and also install the AER package for the dataset used in the Gamma-Negative-Binomial model example.
 
 ## Installation
 
@@ -42,7 +42,7 @@ Bayes, C. L., Bazán, J. L., & Valdivieso, L. (2025+). A robust regression model
 
 ## Example for Gamma-Negative-Binomial model
 
-Taken from Appendix 2 of Bayes, Bazán, and Valdivieso (2025). Estimation of model GNB0 took 100 seconds on an Intel Core i-7 processor with 2.80 GHz and 16.0 GB RAM, this is mainly due to the use of numerical integration in the GNB0 probability mass evaluation.
+Taken from Appendix 2 of Bayes, Bazán, and Valdivieso (2025). Estimation of model $GNB_0$ took 100 seconds on an Intel Core i-7 processor with 2.80 GHz and 16.0 GB RAM, this is mainly due to the use of numerical integration in the $GNB_0$ probability mass evaluation.
 
 ```r
 library(gamlss)
@@ -146,7 +146,12 @@ summary(fit.GNB0.M1)
 ##             AIC:     1538.374 
 ##             SBC:     1569.075 
 ## ******************************************************************
+## Warning:
+## In summary.gamlss(fit.GNB0.M1) :
+##   summary: vcov has failed, option qr is used instead
 ```
+
+The warning indicates that the standard errors were computed using the QR method rather than using the observed information matrix, likely due to numerical difficulties in evaluating the second derivative of the log-likelihood.
 
 ## Example for Beta-2-Binomial model
 
